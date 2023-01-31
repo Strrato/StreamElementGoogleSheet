@@ -11,12 +11,6 @@
     "value": "#fff",
     "group": "Configurations"
   },
-  "font": {
-    "type": "googleFont",
-    "label": "Font:",
-    "value": "Roboto",
-    "group": "Font"
-  },
   "fontWeight": {
     "label": "Font weight:",
     "type": "dropdown",
