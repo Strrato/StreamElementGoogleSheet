@@ -1,0 +1,26 @@
+@import url(https://fonts.googleapis.com/css?family={{font}}:{{fontWeight}});
+
+#list-container {
+    width: 100%;
+}
+
+#list {
+    list-style: none;
+    margin: 0;
+}
+
+#list li {
+    margin: 5px 0;
+    padding: 5px 0;
+    
+    background-color: {{backgroundColor}};
+    color: {{textColor}};
+    font-size: {{fontSize}}px;
+    font-family: {{font}};
+    font-weight: {{fontWeight}};
+}
+
+#list li .score {
+    float: right;
+    margin-right: 5px;
+}

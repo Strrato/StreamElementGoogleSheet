@@ -1,0 +1,43 @@
+{
+  "backgroundColor": {
+    "type": "colorpicker",
+    "label": "Background Color:",
+    "value": "#333",
+    "group": "Configurations"
+  },  
+  "textColor": {
+    "type": "colorpicker",
+    "label": "Text Color:",
+    "value": "#fff",
+    "group": "Configurations"
+  },
+  "font": {
+    "type": "googleFont",
+    "label": "Font:",
+    "value": "Roboto",
+    "group": "Font"
+  },
+  "fontWeight": {
+    "label": "Font weight:",
+    "type": "dropdown",
+    "value": "700",
+    "options": {
+      "100": "Fine (100)",
+      "300": "Soft (300)",
+      "400": "Regular (400)",
+      "500": "Medium (500)",
+      "700": "Bold (700)",
+      "900": "Bold Black (900)"
+    },
+    "group": "Font"
+  },
+  "fontSize": {
+    "type": "slider",
+    "label": "Font size:",    
+    "value": 50,
+    "min": 10,
+    "max": 100,
+    "step": 1,
+    "group": "Font"
+  }
+}
