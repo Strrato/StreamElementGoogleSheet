@@ -1,5 +1,7 @@
 const SHEET_ID = "";
-const ACCESS_TOKEN = "";
+const USER_ID = "";
+const API_TOKEN = "";
+const API_URL = "";
 const DELAY = 2000;
 const RANGE = "A2:B4";
 const COL_INDEX_NAMES = 0;
@@ -12,11 +14,10 @@ let checkInterval = null,
 window.addEventListener('onWidgetLoad', function (obj) {
     if(checkInterval === null){
         checkInterval = setInterval(() => {
-            fetch(`https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/${RANGE}`,
+            fetch(`${API_URL}/${USER_ID}/${SHEET_ID}/${RANGE}`,
             {
                 headers: {
-                    "Content-Type": "application/json",
-                    Authorization: `Bearer ${ACCESS_TOKEN}`  
+                    "X-AUTH-TOKEN": API_TOKEN
                 }
             })
             .then(response => response.json())
